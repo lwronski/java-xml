@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="462.0" prefWidth="1077.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button layoutX="970.0" layoutY="97.0" mnemonicParsing="false" onAction="#addPersonButtonClicked" text="Add Person" />
+      <TableView fx:id="tablePerson" layoutX="-1.0" layoutY="217.0" prefHeight="200.0" prefWidth="419.0">
+        <columns>
+          <TableColumn fx:id="Name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="LastName" prefWidth="102.0" text="Last Name" />
+            <TableColumn fx:id="Pesel" prefWidth="139.0" text="Pesel" />
+            <TableColumn fx:id="Email" prefWidth="100.0" text="Email" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableCar" layoutX="421.0" layoutY="218.0" prefHeight="200.0" prefWidth="659.0">
+        <columns>
+          <TableColumn fx:id="type" prefWidth="105.0" text="Type" />
+          <TableColumn fx:id="validity" prefWidth="98.0" text="Validity" />
+            <TableColumn fx:id="registrationNumber" prefWidth="119.0" text="registrationNumber" />
+            <TableColumn fx:id="dateRegistration" prefWidth="118.0" text=" dateRegistration" />
+            <TableColumn fx:id="carBody" prefWidth="90.0" text="carBody" />
+            <TableColumn fx:id="numberDocument" prefWidth="129.0" text="numberDocument" />
+        </columns>
+      </TableView>
+      <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Person" />
+      <ComboBox fx:id="comboBoxPerson" layoutX="12.0" layoutY="35.0" prefHeight="25.0" prefWidth="218.0" />
+      <Button layoutX="253.0" layoutY="35.0" mnemonicParsing="false" onAction="#editPerson" text="Edit" />
+      <Button layoutX="12.0" layoutY="112.0" mnemonicParsing="false" onAction="#sendToSerwerPerson" text="Send All data" />
+      <Button layoutX="12.0" layoutY="159.0" mnemonicParsing="false" onAction="#synchronizeAll" text="Synchronize All" />
+      <Button layoutX="315.0" layoutY="177.0" mnemonicParsing="false" onAction="#registerCar" text="Register Car" />
+      <Label layoutX="318.0" layoutY="144.0" text="Select Person " />
+      <Button layoutX="970.0" layoutY="177.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</AnchorPane>

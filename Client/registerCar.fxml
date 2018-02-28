@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerRegisterCar">
+    <children>
+        <HBox layoutY="1.0" prefHeight="400.0" prefWidth="98.0" style="-fx-background-color: #48A5EA;" />
+        <TextField fx:id="type" layoutX="127.0" layoutY="121.0" onInputMethodTextChanged="#deleteSucces" onMouseDragEntered="#deleteSucces" onMousePressed="#deleteSucces" promptText="Type" />
+        <TextField fx:id="registrationNumber" layoutX="127.0" layoutY="161.0" onInputMethodTextChanged="#deleteSucces" onMouseDragEntered="#deleteSucces" onMousePressed="#deleteSucces" promptText="registrationNumber" />
+        <TextField fx:id="validity" layoutX="349.0" layoutY="197.0" onInputMethodTextChanged="#deleteSucces" onMouseDragEntered="#deleteSucces" onMousePressed="#deleteSucces" promptText="validity" />
+        <TextField fx:id="dateRegistration" layoutX="349.0" layoutY="121.0" onInputMethodTextChanged="#deleteSucces" onMouseDragEntered="#deleteSucces" onMousePressed="#deleteSucces" promptText="dateRegistration" />
+        <TextField fx:id="carBody" layoutX="129.0" layoutY="200.0" onMousePressed="#deleteSucces" promptText="carBody" />
+        <TextField fx:id="numberDocument" layoutX="350.0" layoutY="165.0" onMousePressed="#deleteSucces" promptText="numberDocument" />
+        <Label layoutX="126.0" layoutY="31.0" text="Register Car" textFill="#48a5ea">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <Button layoutX="462.0" layoutY="316.0" mnemonicParsing="false" onAction="#BackButtonClicked" style="-fx-background-color: #48A5EA;" text="Go Back" textFill="WHITE" />
+        <Button layoutX="455.0" layoutY="245.0" mnemonicParsing="false" onAction="#addCar" style="-fx-background-color: #48A5EA;" text="Register" textFill="#eeecec" />
+        <Text fx:id="addCar" fill="#48a5ea" layoutX="126.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Button layoutX="366.0" layoutY="241.0" mnemonicParsing="false" onAction="#resetAll" style="-fx-background-color: #48A5EA;" text="Reset All" textFill="WHITE" />
+      <Label layoutX="124.0" layoutY="61.0" text="Person" textFill="#48a5ea">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Text fx:id="personText" fill="#48a5ea" layoutX="124.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="422.7294921875" />
+    </children>
+</AnchorPane>
